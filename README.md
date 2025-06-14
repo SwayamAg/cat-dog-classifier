@@ -6,14 +6,16 @@ This project uses a Convolutional Neural Network (CNN) to classify images as eit
 
 ```
 CAT_DOG_CNN/
-├── Dataset/                 # (Optional) Folder for input image dataset
-├── cat_dog_cnn_model.h5     # Trained CNN model file
-├── download.jpg             # Sample test image 1
-├── download (1).jpg         # Sample test image 2
-├── train_model.ipynb        # Jupyter notebook used to train the model
-├── Prediction.ipynb         # Notebook to load model and predict on new images
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+├── Dataset/                   # (Optional) Folder for image dataset
+├── cat_dog_cnn_model.h5       # Trained model (tracked via Git LFS)
+├── download.jpg               # Sample test image 1
+├── download (1).jpg           # Sample test image 2
+├── train_model.ipynb          # Notebook to train the model
+├── Prediction.ipynb           # Notebook to test model predictions
+├── requirements.txt           # Python dependencies
+├── .gitignore                 # Git ignored files (e.g., .ipynb_checkpoints)
+├── .gitattributes             # Git LFS config (e.g., *.h5)
+└── README.md                  # Project documentation
 ```
 
 ---
@@ -97,6 +99,19 @@ pip install -r requirements.txt
 - Try transfer learning (e.g., MobileNetV2, ResNet50)
 - **Streamlit UI for demo (coming soon!)**
 - Deploy and share public demo link
+
+---
+
+## 💡 Note on Git LFS
+
+> **Important:**  
+> This project uses **Git Large File Storage (LFS)** to track the model file (`cat_dog_cnn_model.h5`).  
+> Please install and initialize Git LFS before cloning or pulling this repo:
+>
+> ```bash
+> git lfs install
+> git clone https://github.com/SwayamAg/cat-dog-classifier.git
+> ```
 
 ---
 
