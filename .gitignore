@@ -1,21 +1,28 @@
-# Ignore virtual environment
-.venv/
-
-# Ignore Python cache
+# Python
 __pycache__/
 *.py[cod]
+*.so
 
-# Ignore Jupyter notebook checkpoints
+# Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
 
-# Ignore large model files (optional)
-*.h5
-*.pkl
-*.pt
+# Virtual Environment
+.venv/
+env/
+ENV/
+venv/
+*.egg-info/
 
-# Ignore system-specific junk
+# Dataset and model files (tracked separately if needed)
+*.csv
+*.zip
+*.tar.gz
+*.tar
+*.npy
+
+# VSCode settings
+.vscode/
+
+# OS files
 .DS_Store
 Thumbs.db
-
-# Ignore editor settings (optional)
-.vscode/
