@@ -80,12 +80,6 @@ Install dependencies using:
 pip install -r requirements.txt
 ```
 
-Contents of `requirements.txt`:
-```
-tensorflow
-numpy
-```
-
 ---
 
 ## 📈 Accuracy
